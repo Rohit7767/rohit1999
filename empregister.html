@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="sty3.css">
+<link rel="stylesheet" type="text/css"   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Employee Register</title>
+</head>
+<body>
+
+    <!-- header section -->
+
+    <header class="header">
+  
+        <nav class="navbar navbar-expand-lg header-nav">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Employee Management System</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between"  id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Employee Login</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Administration Login
+                  </a>
+                  <ul class="dropdown-menu" style="margin-bottom: 10px;">
+                    <li><a class="dropdown-item" href="#">Add Employee</a></li>
+                    <li><a class="dropdown-item" href="#">Add Salary</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="">Contact Us</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto">
+                  <button class="btn btn-primary">Login</button>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  
+      </header>
+  
+
+<!-- register section -->
+
+<div class="container1">
+    <form action="" method="post">
+        <h2>Employee Registration</h2>
+        <div class="content">
+            <div class="input-box">
+                <label for="fullname">Full Name</label>
+                <input type="text" placeholder="Enter full name" name="fname" required>
+            </div>
+            <div class="input-box">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label>
+                <input type="text" pattern='^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$' placeholder="Enter your valid email" name="myemail" id="email"  class="form-control"  required>
+            </div>
+            <div class="input-box">
+                <label for="phonenumber">Phone Number</label>
+                <input type="tel" placeholder="Enter phone number" name="phoneNumber" required>
+            </div>
+            <div class="input-box">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter new password" name="password" required>
+            </div>
+            <div class="input-box">
+                <label for="Cpassword">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" name="confirmPassword" required>
+            </div>
+            <span class="gender-title"></span>
+            <div class="gender-category">
+                <input type="radio" name="gender" id="male">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="gender">Female</label>
+                <input type="radio" name="gender" id="other">
+                <label for="gender">Other</label>
+            </div>
+        </div>
+        <div class="alert">
+            <p>By clicking Sign Up,you agree to our <a href="">Terms</a><a href="">Privacy Policy</a> and Cookies Policy.</p>
+        </div>
+        <button class="btn">
+            <button style="margin-top: -3rem;
+         margin-left: 7rem;
+            width: 70%;
+            padding: 10px;
+            display: block;
+            font-size: 20px;
+            color: #eb1d1d;
+            border: none;
+            border-radius: 5px;
+            background-image: linear-gradient(to right,#aa076b,#61045f);" type="submit">Register</button>
+        </button>
+    </form>
+</div>
+
+
+    
+</body>
+
+<footer class="footer mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">affiliate program</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class="text-uppercase mb-4 font-weight-bold text-info">Contact</h5>
+            <p>
+            <li style="color: white;" class="fas fa-home mr-4 fa-1x"></li><span style="margin-left: 10px; color: blue; font-size: 20px;">Karve Nagar,Pune</span></p>
+          <p>
+            <li style="color: white;" class="fas fa-envelope mr-3"></li><span style="margin-left: 10px; color: blue;font-size: 17px;">Emploeemagm45@gmail.com</span>
+          </p>
+              <p><li class="fas fa-phone mr-3"></li><span style="margin-left: 10px; color: blue;"></span>+91-8757484949
+            </p>
+          <p><li style="color:wheat" class="fas fa-print mr-3"></li><span style="margin-left: 10px; color: blue;">+012 475758554</span></p>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="#"><i  class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a href="#"><i class="fa-brands fa-github fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  <hr class="mb-4">
+  <div class="d-flex justify-content-center">
+    <div>
+      <p style="font-size: 20px;">Copyright@ 2023 All Rights Reserved By:
+        <a href="#" style="text-decoration: none;">
+        <strong class="text-info">Employee Management</strong>
+        </a>
+      </p>
+    </div>
+  </div>
+  </footer>
+  
+  
+</html>
